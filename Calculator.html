@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+
+    var num1 = parseInt(window.prompt("Calculator: Input desired number."));
+    var num2 = parseInt(window.prompt("Calculator: Input second desired number."));
+
+    var op = window.prompt("What operator do you want? ( + - * / )");
+
+    switch (op) {
+        default:
+            output = "something went wrong, try again.";
+            break;
+        case op = "+":
+            output = num1 + num2;
+            break;
+        case op = "-":
+            output = num1 - num2;
+            break;
+        case op = "*":
+            output = num1 * num2;
+            break;
+        case op = "/":
+            output = num1 / num2;
+            break;
+    }
+
+    document.write(output)
+
+</script>
+</head>
+<body>
+</body>
+</html>
