@@ -1,5 +1,12 @@
 <html>
 <head>
+    <title>calculat</title>
+
+    <body style="text-align:center;">
+
+        <h2>And your result is:</h2>
+
+        <p id="text">...</p>
 <script>
 
     var num1 = parseFloat(window.prompt("Calculator: Input desired number."));
@@ -25,7 +32,8 @@
             break;
     }
 
-    document.write(output)
+    console.log(output)
+    document.getElementById("text").innerHTML = output;
 
 </script>
 </head>
