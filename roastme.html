@@ -1,26 +1,26 @@
 <html>
 <head>
+    <title>me xing</title>
+    <body style="text-align:center;">
+
+        <h2>bele, vo te xinga</h2>
+
+        <p id="text">...</p>
+
+    </body>
 <script>
 var roastmeprojectbutinjavascript = (function () {
     function roastmeprojectbutinjavascript() {
     }
     roastmeprojectbutinjavascript.main = function (args) {
         var roastNumber = ((Math.random() * 69) | 0);
+
         /*
         var roastNumber = ((Math.random() * 69) | 0);
-        Pega um numero aleatório de 0 a 69, ou seja, 70 roasts diferentes.
-
+        Pega um numero aleatório de 0 a 69
         Programa feito em Java e Traduzido para JavaScript ^^
-        
-        Um pouco de explicação de como funcionaria esse programa:
-        Ele simplesmente pega um numero aleatório de 0 a 69 e seleciona qual roast pegar
-        Então ele da um print no console selecionando a string e o numero do roast.
-        
-        Programa feito por DatRat, se de algum jeito esse programa chegou em suas mãos,
-        não remova o copyright e não divulgue mais por favor. Fiz isso sem fins lucrativos.
-        
-        Discord: DatRat#7689
         */
+
         var roast = ["A bateria do meu telefone dura mais do que seus relacionamentos.",
         "Oh, você está falando comigo, eu pensei que você só falava nas minhas costas.",
         "Meu nome deve ter um gosto bom porque está sempre na sua boca.",
@@ -91,7 +91,8 @@ var roastmeprojectbutinjavascript = (function () {
         "Sua certidão de nascimento é uma carta de desculpas do fabricante de preservativos",
         "Eu explicaria para você, mas deixei meu Dicionário Inglês para Estúpido em casa.",
         "Você não gosta de mim, então vá se foder. Problema resolvido."];
-        document.write(roastNumber + ". " + roast[roastNumber]);
+        console.log(roastNumber + ". " + roast[roastNumber]);
+        document.getElementById("text").innerHTML = roastNumber + ". " + roast[roastNumber];
     };
     return roastmeprojectbutinjavascript;
 }());
