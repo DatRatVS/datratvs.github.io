@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>GALERIA BRASSO</title>
+<body style="text-align:center;">
+<p id="text"></p>
+<script>
+
+
+</script>
+<audio id="player" controls="controls">
+  <source src="Sketchers.mp3" type="audio/mp3" />
+  </audio>
+  <video width="320" height="240" controls="controls">
+    <source src="h.mp4" type="video/mp4">
+</video>
+<video width="320" height="240" controls="controls">
+  <source src="dogExp.mp4" type="video/mp4">
+</video>
+<video width="320" height="240" controls="controls">
+  <source src="lapada.mp4" type="video/mp4">
+</video>
+</head>
+<body>
+  <div>
+	  <button onclick="document.getElementById('player').play()">Play</button>
+	  <button onclick="document.getElementById('player').pause()">Pause</button>
+	  <button onclick="document.getElementById('player').volume+=0.1">Aumentar volume</button>
+	  <button onclick="document.getElementById('player').volume-=0.1">Diminuir volume</button>
+	</div>
+</body>
+</html>
