@@ -5,6 +5,14 @@ function onClick() {
     window.location.href = "https://www.google.com/search?q=" + replacedText;
 }
 
+function onClickWaiting() {
+    new Audio('res/audio.mp3').play();
+    let video = document.getElementById('video');
+    video.style.display = 'block';
+    video.play();
+    setTimeout(() => { video.style.display = 'none'; }, 72500);
+}
+
 const node = document.getElementsByClassName("textbox")[0];
 node.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
