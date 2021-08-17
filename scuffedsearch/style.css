@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-family: 'sans-serif';
+  font-family: 'Whitney';
   height: 100vh;
   overflow: hidden;
 }
@@ -22,68 +22,68 @@ header {
 }
 
 .textbox {
-	border: 1px solid #848484;
+  border: 1px solid #848484;
   font-size: 14px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	outline: 0;
-	height: 28px;
-	width: 440px;
-	padding-left: 10px;
-	padding-right: 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  outline: 0;
+  height: 28px;
+  width: 440px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding: 4px;
   margin: 10px;
 }
 
 .Button {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color:#ffffff;
-	border-radius:42px;
-	border:1px solid #333029;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+  border-radius: 42px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
 }
 
 .Button:hover {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color:#ffffff;
+	background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color: #ffffff;
 }
 
 .Button:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
 .waitingButton {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color:#ffffff;
-	border-radius:42px;
-	border:1px solid #333029;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+  border-radius: 42px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
 
 .waitingButton:hover {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color:#ffffff;
+  background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color:#ffffff;
 }
 
 #video {
