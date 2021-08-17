@@ -10,7 +10,7 @@ function onClickWaiting() {
     let video = document.getElementById('video');
     video.style.display = 'block';
     video.play();
-    setTimeout(() => { video.style.display = 'none'; }, 72500);
+    setTimeout(() => { video.style.display = 'none'; }, 69000);
 }
 
 const node = document.getElementsByClassName("textbox")[0];
