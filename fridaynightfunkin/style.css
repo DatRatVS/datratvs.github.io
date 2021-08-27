@@ -6,15 +6,7 @@ body {
   font-family: 'Oswald', 'sans-serif';
   flex-wrap: wrap;
   padding-top: 10px;
-}
-
-#video {
-  display: none;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  overflow: hidden;
 }
 
 #button {
@@ -36,4 +28,29 @@ body {
   transition: 100ms all ease;
   will-change: border-width;
   cursor: pointer;
+}
+
+.button2 {
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+  border-radius: 42px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.button2:hover {
+  background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color:#ffffff;
 }
