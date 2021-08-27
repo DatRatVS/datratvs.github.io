@@ -1,6 +1,5 @@
 i don't think i would get sued but
-
-# code i've stolen: <h1>
+# code i've stolen:
 
 1. [/fridaynightfunkin/game](https://datratvs.github.io/fridaynightfunkin/game) ➜ [Kade Engine 1.6.2](https://github.com/KadeDev/Kade-Engine/tree/1.6.2)
 

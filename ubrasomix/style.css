@@ -1,0 +1,53 @@
+body {
+  font-family: "whitney";
+  background-color: #000000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+header {
+  color: #ffffff;
+  text-align: center;
+}
+
+.divOutline {
+  border: 2px dashed white;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 0.5%;
+}
+
+.button {
+	background-color:#ffffff;
+	border-radius:17px;
+	border:1px solid #48ff00;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 39px;
+	text-decoration:none;
+
+}
+
+.button:hover {
+  color:#FFFFFF;
+	background-color:#48ff00;
+  transition: all 0.2s;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
