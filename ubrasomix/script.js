@@ -1,3 +1,3 @@
 function download() {
-    console.log("kkkkk clicou e ficou sus")
+    window.location.href = "https://github.com/DatRatVS/datratvs.github.io/raw/main/ubrasomix/res/u_braso%20-%20mix%202.1.osk";
 }

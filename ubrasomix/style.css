@@ -1,35 +1,61 @@
 body {
-  font-family: "whitney";
-  background-color: #000000;
+  font-family: 'Whitney SSm A', Arial;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
+
+  background-image: url("https://cdn.discordapp.com/attachments/442095580622356491/880939891318472794/wp6837854.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header {
+h1 {
   color: #ffffff;
-  text-align: center;
+  text-align: top;
+  text-shadow: 0 0 15px #000000;
+  margin: 2px;
 }
 
-.divOutline {
-  border: 2px dashed white;
+img {
+  padding-top: 0.5%;
+  width: 128px;
+  height: 128px;
+}
+
+.divImgs {
+  flex-direction: row;
+}
+
+.quieres {
+  height: 200px;
+}
+
+.divBorder {
+  background-image: url("https://cdn.discordapp.com/attachments/442095580622356491/880932084129103882/unknown.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: 2px dashed #000000;
   border-radius: 20px;
   width: 500px;
   height: 300px;
 
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding-bottom: 0.5%;
+
+  box-shadow: 0 0 15px #000000;
 }
 
 .button {
 	background-color:#ffffff;
 	border-radius:17px;
-	border:1px solid #48ff00;
+	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
 	color:#000000;
@@ -43,11 +69,20 @@ header {
 
 .button:hover {
   color:#FFFFFF;
-	background-color:#48ff00;
+	background-color:#000000;
   transition: all 0.2s;
 }
 
 .button:active {
 	position:relative;
 	top:1px;
+}
+
+.junto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 2%;
 }
