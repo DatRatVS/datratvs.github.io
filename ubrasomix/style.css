@@ -52,7 +52,7 @@ img {
   box-shadow: 0 0 15px #000000;
 }
 
-.button {
+.button, .outdatedButton {
 	background-color:#ffffff;
 	border-radius:17px;
 	border:1px solid #000000;
@@ -67,7 +67,7 @@ img {
 
 }
 
-.button:hover {
+.button:hover, .outdatedButton:hover {
   color:#FFFFFF;
 	background-color:#000000;
   transition: all 0.2s;
@@ -85,4 +85,13 @@ img {
   flex-direction: column;
 
   margin-bottom: 2%;
+}
+
+.outdatedButton {
+  position: absolute;
+  bottom: 1%;
+}
+
+.outdatedButton:active {
+	top: 94.3%;
 }
