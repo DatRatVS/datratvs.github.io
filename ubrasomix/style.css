@@ -104,3 +104,39 @@ img {
 .outdatedButton:active {
 	top: 94.3%;
 }
+
+.setinhaBraba {
+  position: absolute;
+  left: 36.5%;
+  bottom: 30%;
+  transform: rotate(50deg) ;
+}
+
+.setinhaBraba2 {
+  position: absolute;
+  left: 50%;
+  bottom: 39%;
+  transform: scaleX(-1) rotate(100deg);
+}
+
+.ad1 {
+  width: auto;
+  height: auto;
+}
+
+.a1 {
+  position: absolute;
+  left: 1%;
+  cursor: pointer;
+}
+
+.ad2 {
+  width: auto;
+  height: auto;
+}
+
+.a2 {
+  position: absolute;
+  right: 1%;
+  cursor: pointer;
+}
