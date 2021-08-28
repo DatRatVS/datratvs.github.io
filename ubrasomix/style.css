@@ -52,7 +52,7 @@ img {
   box-shadow: 0 0 15px #000000;
 }
 
-.button, .outdatedButton {
+.button, .outdatedButton, .repoButton {
 	background-color:#ffffff;
 	border-radius:17px;
 	border:1px solid #000000;
@@ -67,7 +67,7 @@ img {
 
 }
 
-.button:hover, .outdatedButton:hover {
+.button:hover, .outdatedButton:hover, .repoButton:hover {
   color:#FFFFFF;
 	background-color:#000000;
   transition: all 0.2s;
@@ -90,6 +90,15 @@ img {
 .outdatedButton {
   position: absolute;
   bottom: 1%;
+}
+
+.repoButton {
+  position: absolute;
+  bottom: 7%;
+}
+
+.repoButton:active {
+  top: 88.3%;
 }
 
 .outdatedButton:active {
