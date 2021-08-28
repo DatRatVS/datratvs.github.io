@@ -13,4 +13,4 @@ i don't think i would get sued but
 > ✔️ Patent use
 > ✔️ Private use
 
-3. [U Braso Mix - osu! Skin](https://github.com/DatRatVS/datratvs.github.io/tree/main/ubrasomix/res) ➜ [Made by Fabricio700](https://github.com/Fabricio700)
+3. [U Braso Mix - osu! Skin](https://github.com/DatRatVS/datratvs.github.io/tree/main/ubrasomix/res) ➜ [ubrasomix](https://github.com/fabricio700/ubrasomix)
