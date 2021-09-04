@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  font-family: 'Whitney SSm A', Arial;
+  font-family: Arial;
   color: #FFFFFF;
 
   display: flex;
@@ -17,8 +17,12 @@ body {
 .divBorder {
   border: 2px double #ffffff;
   border-radius: 20px;
-  width: 90%;
-  height: 80%;
+  
+  width: 50%;
+  height: 28%;
+
+  /* width: 90%;
+     height: 80%; */
 
   backdrop-filter: blur(4px);
 
@@ -54,6 +58,8 @@ code {
 
   width: fit-content;
   height: fit-content;
+
+  cursor: pointer;
 }
 
 .bono {
