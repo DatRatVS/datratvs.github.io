@@ -18,8 +18,8 @@ body {
   border: 2px double #ffffff;
   border-radius: 20px;
   
-  width: 50%;
-  height: 28%;
+  width: 55%;
+  height: fit-content;
 
   /* width: 90%;
      height: 80%; */
@@ -36,10 +36,33 @@ body {
   font-size: 24px;
 }
 
-.desc {
+.desc, .descBottom {
   padding-left: 0.8%;
 
   text-indent: 8px;
+}
+
+.descBottom {
+  padding-bottom: 0.8%;
+
+  text-decoration: underline solid #551a8b;
+  cursor: pointer;
+
+  color: #551a8b;
+}
+
+.descBottom:hover {
+  text-decoration: underline solid #300558;
+  color: #300558;
+
+  transition: all 0.2s;
+}
+
+.descBottom:active {
+  text-decoration: underline solid #fa6b34;
+  color: #fa6b34;
+
+  transition: all 0.05s;
 }
 
 code {
@@ -59,12 +82,5 @@ code {
   width: fit-content;
   height: fit-content;
 
-  cursor: pointer;
-}
-
-.bono {
-  width: 128px;
-  height: 128px;
-
-  padding-left: 1%;
+  cursor: text;
 }
