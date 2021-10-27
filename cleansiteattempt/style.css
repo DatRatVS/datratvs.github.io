@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body {
   background-color: #0D1117;
@@ -24,10 +24,10 @@ body {
 }
 
 .upperBarText {
-  font-family: "Homemade Apple", "cursive";
+  font-family: "Dancing Script", "cursive";
 
   margin: 8px;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .transitionBlackScreen {
@@ -61,6 +61,10 @@ body {
   color: #240046;
 
   transition: all 0.05s ease-in-out;
+}
+
+.mobileOnlyText {
+  z-index: -100;
 }
 
 /* Menu Icon & Animation */
@@ -98,14 +102,26 @@ body {
 /* Menu Icon & Animation */
 
 @media only screen and (hover: none) and (pointer: coarse) {
-  .upperBar {
-    height: fit-content;
+  .transitionBlackScreen {
+    width: 4096px;
+    height: 4096px;
+
+    transition: all 0.5s;
+    transform: translateX(0);
   }
-  .upperBarText {
-    font-size: 65px;
-  }
-  .container {
-    display: none;
+  .mobileOnlyText {
+    color: #FFFFFF;
+    font-family: "Dancing Script", "cursive";
+    letter-spacing: 4px;
+    font-size: 120px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -200px;
+
+    z-index: 1000;
   }
 }
 
