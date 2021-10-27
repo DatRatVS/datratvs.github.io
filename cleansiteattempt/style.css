@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body {
-  background-color: #0D1117;
+  background-color: #0E050F;
 
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
   width: 100%;
   height: 40px;
 
-  background: #FFFFFF;
+  background: #9388A2;
   position: fixed;
 
   z-index: 1;
@@ -132,7 +132,7 @@ body {
   width: 240px;
   height: 100%;
 
-  background: #dddddd;
+  background: #9388A2;
   position: fixed;
 
   z-index: 0;
