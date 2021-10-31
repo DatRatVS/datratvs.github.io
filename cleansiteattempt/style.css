@@ -155,6 +155,7 @@ body {
   bottom: 8px;
 
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .githubIcon {
@@ -168,4 +169,12 @@ body {
 .steamIcon {
   left: 105px;
   border-radius: 50%;
+}
+
+.githubIcon:hover, .discordIcon:hover, .steamIcon:hover {
+  bottom: 6px;
+}
+
+.githubIcon:active, .discordIcon:active, .steamIcon:active {
+  bottom: 2px;
 }
