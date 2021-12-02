@@ -1,0 +1,53 @@
+div {
+    /* put this in the center of the screen */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    /* i should not be a fit-content div */
+    width: 50%;
+}
+
+/* give a little bit of style to the text field */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    outline-color: #bebebe;
+}
+
+/* give a stylish font to the h1 */
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 50px;
+    color: #000000;
+}
+
+/* nah, i want another color to h1, make it !important */
+h1:hover {
+    color: #ff0000;
+    /* turns out it didn't make it important, nor made it in another color */
+}
+
+/* give h1 a MASSIVE AND COOL transition */
+h1:hover {
+    transition: 0.5s;
+}
+
+/* give body a transition effect */
+body {
+    background-color: #f8f8f8;
+    transition: background-color 0.5s;
+}
+
+/* i tried hard to make it do the same of above but to the text field, but it didnt work */
+input {
+    transition: outline-color 0.5s;
+}
