@@ -51,3 +51,14 @@ body {
 input {
     transition: outline-color 0.5s;
 }
+
+@media(max-width: 1032px) {
+    /* make h1 significantly bigger */
+    h1 {
+        font-size: 150px;
+    }
+    /* make the text field significantly bigger */
+    input[type=text] {
+        font-size: 150px;
+    }
+}

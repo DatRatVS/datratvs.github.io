@@ -19,5 +19,5 @@ document.getElementById("h1").addEventListener("mouseover", function(e) {
 
 // make it normal again if you are not hovering over it
 document.getElementById("h1").addEventListener("mouseout", function(e) {
-    document.getElementById("h1").innerHTML = "Give me a cool color!";
+    document.getElementById("h1").innerHTML = "Give me a cool HEX color!";
 });
