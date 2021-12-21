@@ -1,6 +1,23 @@
+let video = document.getElementById('video')
+
 function onClick() {
-  let video = document.getElementById('video');
-  video.style.display = 'block';
-  video.play();
-  setTimeout(() => {  window.location.href = "https://pt.pornhub.com/gayporn"; }, 15500);
+
+  video.style.width = window.innerWidth + 'px'
+  video.style.height = window.innerHeight + 'px'
+  video.style.display = 'block'
+  video.volume = 0.02
+  video.play()
+
+  document.getElementById('a').style.display = 'none'
+
+  video.addEventListener('ended', () => {
+    window.close()
+  })
 }
+
+window.addEventListener('resize', () => {
+  setTimeout(() => {
+    video.style.width = window.innerWidth + 'px'
+    video.style.height = window.innerHeight + 'px'
+  }, 0)
+})
