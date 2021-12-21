@@ -8,6 +8,8 @@ function onClick() {
   video.volume = 0.02
   video.play()
 
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
   document.getElementById('a').style.display = 'none'
 
   video.addEventListener('ended', () => {
