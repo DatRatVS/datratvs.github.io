@@ -1,11 +1,25 @@
-let video = document.getElementById('video')
+const randomNumber = Math.floor(Math.random() * 10)
+
+let video
+
+if (randomNumber === 5) {
+  video = document.getElementById("second-video")
+  console.log('The random number is 5, playing "Z"')
+} else {
+  video = document.getElementById("video")
+  console.log('The random number is ' + randomNumber + ' playing "G"')
+}
 
 function onClick() {
 
   video.style.width = window.innerWidth + 'px'
   video.style.height = window.innerHeight + 'px'
   video.style.display = 'block'
-  video.volume = 0.02
+
+  if ("video" === video.id) {
+    video.volume = 0.8
+  }
+  
   video.play()
 
   document.addEventListener('contextmenu', event => event.preventDefault());

@@ -15,9 +15,9 @@ body {
   flex-direction: column;
 }
 
-#video {
+#video, #second-video {
   display: none;
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
