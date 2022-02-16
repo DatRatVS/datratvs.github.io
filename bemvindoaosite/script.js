@@ -1,14 +1,28 @@
-const randomNumber = Math.floor(Math.random() * 10)
+const randomNumber = Math.floor(Math.random() * 3)
 
-let video
+const videos = [
+  "G",
+  "Z",
+  "V",
+  "L",
+  "T"
+]
 
-if (randomNumber === 5) {
+let video = document.getElementById(videos[Math.floor(Math.random()*videos.length)])
+console.log(video)
+
+/*
+if (randomNumber === 0) {
   video = document.getElementById("second-video")
-  console.log('The random number is 5, playing "Z"')
-} else {
+  console.log('The random number is 0, playing "Z"')
+} else if (randomNumber === 1) {
   video = document.getElementById("video")
-  console.log('The random number is ' + randomNumber + ' playing "G"')
+  console.log('The random number is 1 playing "G"')
+} else {
+  video = document.getElementById("third-video")
+  console.log('The random number is 2 playing "V"')
 }
+*/
 
 function onClick() {
 
@@ -17,7 +31,7 @@ function onClick() {
   video.style.display = 'block'
 
   if ("video" === video.id) {
-    video.volume = 0.8
+    video.volume = 0.6
   }
   
   video.play()
@@ -32,8 +46,6 @@ function onClick() {
 }
 
 window.addEventListener('resize', () => {
-  setTimeout(() => {
     video.style.width = window.innerWidth + 'px'
     video.style.height = window.innerHeight + 'px'
-  }, 0)
 })

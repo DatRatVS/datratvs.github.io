@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 
-#video, #second-video {
+video {
   display: none;
   position: absolute;
   right: 0;
