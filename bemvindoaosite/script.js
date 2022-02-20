@@ -5,7 +5,8 @@ const videos = [
   "Z",
   "V",
   "L",
-  "T"
+  "T",
+  "9C"
 ]
 
 let video = document.getElementById(videos[Math.floor(Math.random()*videos.length)])
