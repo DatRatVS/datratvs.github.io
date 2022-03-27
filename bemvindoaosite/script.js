@@ -1,18 +1,11 @@
-const randomNumber = Math.floor(Math.random() * 3)
+const videos = ["G", "Z", "V", "L", "T", "9C", "M", "D"];
 
-const videos = [
-  "G",
-  "Z",
-  "V",
-  "L",
-  "T",
-  "9C",
-  "M",
-  "D"
-]
+// const randomNumber = Math.floor(Math.random() * 3);
+const wrapper = document.getElementById("wrapper");
+const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+const videoElement = document.createElement("video");
 
-let video = document.getElementById(videos[Math.floor(Math.random()*videos.length)])
-console.log(video)
+console.log(randomVideo);
 
 /*
 if (randomNumber === 0) {
@@ -28,27 +21,23 @@ if (randomNumber === 0) {
 */
 
 function onClick() {
+    videoElement.id = "video";
+    videoElement.src = `./res/${randomVideo}.mp4`;
+    videoElement.volume = 0.6;
 
-  video.style.width = window.innerWidth + 'px'
-  video.style.height = window.innerHeight + 'px'
-  video.style.display = 'block'
+    wrapper.appendChild(videoElement);
+    videoElement.play();
 
-  if ("video" === video.id) {
-    video.volume = 0.6
-  }
-  
-  video.play()
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-  document.addEventListener('contextmenu', event => event.preventDefault());
+    document.getElementById("a").style.display = "none";
 
-  document.getElementById('a').style.display = 'none'
-
-  video.addEventListener('ended', () => {
-    window.close()
-  })
+    videoElement.addEventListener("ended", () => {
+        window.close();
+    });
 }
 
-window.addEventListener('resize', () => {
-    video.style.width = window.innerWidth + 'px'
-    video.style.height = window.innerHeight + 'px'
-})
+window.addEventListener("resize", () => {
+    videoElement.style.width = window.innerWidth + "px";
+    videoElement.style.height = window.innerHeight + "px";
+});
