@@ -21,6 +21,10 @@ video {
   min-height: 100%;
 }
 
+#wrapper {
+  cursor: none;
+}
+
 * {
   margin: 0;
   padding: 0;
