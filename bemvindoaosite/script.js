@@ -1,24 +1,10 @@
 const videos = ["G", "Z", "V", "L", "T", "9C", "M", "D"];
 
-// const randomNumber = Math.floor(Math.random() * 3);
 const wrapper = document.getElementById("wrapper");
 const randomVideo = videos[Math.floor(Math.random() * videos.length)];
 const videoElement = document.createElement("video");
 
 console.log(randomVideo);
-
-/*
-if (randomNumber === 0) {
-  video = document.getElementById("second-video")
-  console.log('The random number is 0, playing "Z"')
-} else if (randomNumber === 1) {
-  video = document.getElementById("video")
-  console.log('The random number is 1 playing "G"')
-} else {
-  video = document.getElementById("third-video")
-  console.log('The random number is 2 playing "V"')
-}
-*/
 
 function onClick() {
     videoElement.id = "video";
