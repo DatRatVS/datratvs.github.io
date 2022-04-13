@@ -18,12 +18,18 @@ function onClick() {
 
     document.getElementById("a").style.display = "none";
 
+    resizeVideo();
+
     videoElement.addEventListener("ended", () => {
         window.close();
     });
 }
 
 window.addEventListener("resize", () => {
+    resizeVideo();
+});
+
+function resizeVideo() {
     videoElement.style.width = window.innerWidth + "px";
     videoElement.style.height = window.innerHeight + "px";
-});
+}
