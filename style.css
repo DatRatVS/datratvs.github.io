@@ -58,7 +58,7 @@ li:before {
   height: 10px;
   background: #2a2a2a;
   transform-origin: top;
-  transform: skewX(-41deg);
+  transform: skewX(-45deg);
 }
 
 li:after {
@@ -70,7 +70,7 @@ li:after {
   height: 100%;
   background: #2a2a2a;
   transform-origin: right;
-  transform: skewY(-41deg);
+  transform: skewY(-45deg);
 }
 
 li span {
