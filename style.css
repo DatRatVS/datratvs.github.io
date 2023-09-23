@@ -1,24 +1,22 @@
 /*@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);*/
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 
+html {
+  overflow: hidden;
+}
+
 body {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
 
   background-color: #cfcfcf;
   animation: 2s infinite alternate ease-in-out breathing;
-}
-
-@keyframes breathing {
-  from {
-    background-color: #cfcfcf;
-  }
-  to {
-    background-color: #afafaf;
-  }
+  overflow: hidden;
 }
 
 ul {
@@ -47,6 +45,15 @@ li {
   right: 30px;
 }
 
+.spotify {
+  width: 280px;
+  position: absolute;
+  right: -260px;
+
+  transition: 0.55s ease-in-out;
+  animation: 2s infinite alternate ease-in-out breathingSpotify;
+}
+
 @media (max-width: 768px) {
   ul {
     flex-direction: column;
@@ -61,6 +68,32 @@ li {
   .built {
     font-size: 32px;
   }
+
+  .spotify {
+    display: block;
+  }
+}
+
+@keyframes breathing {
+  from {
+    background-color: #cfcfcf;
+  }
+  to {
+    background-color: #afafaf;
+  }
+}
+
+@keyframes breathingSpotify {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.75;
+  }
+}
+
+.spotify:hover {
+  right: 12px;
 }
 
 li:before {
