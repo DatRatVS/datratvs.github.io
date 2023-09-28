@@ -1,14 +1,18 @@
 const videos = ["G", "Z", "V", "L", "T", "9C", "M", "D", "C", "CA", "AAA", "ZAA", "HL", "GRAU", "H", "S", "GOD", "GOD2", "VELHA", "REM", "PROCE", "MV", "L2"];
 
 const wrapper = document.getElementById("wrapper");
-const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+const getParams = new URLSearchParams(window.location.search);
+const param = getParams.get("force");
+
+const getVideo = param && videos.indexOf(param) !== -1 ? param : videos[Math.floor(Math.random() * videos.length)];
 const videoElement = document.createElement("video");
 
-console.log(randomVideo);
+console.log(getVideo);
 
-function onClick() {
+const onClick = () => {
     videoElement.id = "video";
-    videoElement.src = `./res/${randomVideo}.mp4`;
+    videoElement.src = `./res/${getVideo}.mp4`;
     videoElement.volume = 0.6;
 
     wrapper.appendChild(videoElement);
@@ -29,7 +33,7 @@ window.addEventListener("resize", () => {
     resizeVideo();
 });
 
-function resizeVideo() {
+const resizeVideo = () => {
     videoElement.style.width = window.innerWidth + "px";
     videoElement.style.height = window.innerHeight + "px";
 }
