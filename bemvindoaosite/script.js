@@ -1,4 +1,4 @@
-const videos = ["G", "Z", "V", "L", "T", "9C", "M", "D", "C", "CA", "AAA", "ZAA", "HL", "GRAU", "H", "S", "GOD", "GOD2", "VELHA", "REM", "PROCE"];
+const videos = ["G", "Z", "V", "L", "T", "9C", "M", "D", "C", "CA", "AAA", "ZAA", "HL", "GRAU", "H", "S", "GOD", "GOD2", "VELHA", "REM", "PROCE", "MV", "L2"];
 
 const wrapper = document.getElementById("wrapper");
 const randomVideo = videos[Math.floor(Math.random() * videos.length)];
