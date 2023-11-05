@@ -1,0 +1,1 @@
+window.location = "https://www.x.com/ssadu_/";
