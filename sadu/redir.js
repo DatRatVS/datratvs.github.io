@@ -1,1 +1,1 @@
-window.location = "https://www.x.com/ssadu_/";
+window.location = "https://www.twitter.com/ssadu_/";
